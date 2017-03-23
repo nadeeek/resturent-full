@@ -1,0 +1,312 @@
+/* Base CSS */
+.alignleft {
+    float: left;
+    margin-right: 15px;
+}
+.alignright {
+    float: right;
+    margin-left: 15px;
+}
+.aligncenter {
+    display: block;
+    margin: 0 auto 15px;
+}
+a:focus { outline: 0 solid }
+img {
+    max-width: 100%;
+    height: auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0 0 15px;
+    font-weight: 700;
+    font-family: 'Yeseva One', cursive;
+}
+html,
+body { height: 100% }
+body {
+    font-family: 'Gentium Book Basic', serif;
+}
+a:hover { text-decoration: none }
+
+/* Remove Chrome Input Field's Unwanted Yellow Background Color */
+input:-webkit-autofill, input:-webkit-autofill:hover, input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px white inset !important;
+}
+.top-area{
+    position: relative;
+
+}
+.top-area-bg{
+    background: url("img/header-background.jpg");
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+
+}
+.mainmenu{
+    position: relative;
+    padding-right: 70px;
+}
+.mainmenu ul.nav{
+    text-align: right;
+    float: none;
+}
+.mainmenu ul.navbar-nav li{
+    float: none;
+    display: inline-block;
+    color: #ffffff;
+    padding: 20px 5px;
+}
+.mainmenu ul.nav li a{
+    color: #ffffff;
+    font-size: 18px;
+}
+.header-area{
+    width: 100%;
+    z-index: 999;
+    position: relative;
+}
+.is-sticky.header-area:after{
+    background: #000000;
+    opacity: .8;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    z-index: -1;
+}
+.header-text h2 {
+    background: url(img/divider.png);
+    color: #fff;
+    font-size: 60px;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding-bottom: 200px;
+}
+.btn-filled{
+    color: #ffffff;
+    display: inline-block;
+    padding: 10px 30px;
+    position: relative;
+    z-index: 1;
+    text-transform: uppercase;
+    margin: 0 5px;
+    background: #000000;
+    opacity: .8;
+    margin-bottom: 80px;
+    text-decoration: none;
+}
+.btn-filled:after{
+    z-index: -1;
+    background: #000;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+.btn-filled.yellow-btn{
+    background-color: #D2BA82;
+}
+.social-links{
+    position: absolute;
+    right: -92px;
+    top: 28px;
+}
+.social-links a{
+    color: yellow;
+    font-size: 20px;
+    display: inline-block;
+    padding-left: 8px;
+}
+.section-padding{
+    padding: 80px 0;
+}
+.section-title{
+    background: url("img/small_divider.png") no-repeat scroll center bottom;
+    color: #cc9900;
+    padding-bottom: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.author-photo{
+    margin-top: 50px;
+}
+.about-text{
+    font-size: 16px;
+}
+.about-area{
+    background: url("img/symphony.png");
+}
+.ingredients-area{
+    position: relative;
+}
+.parallax-bg{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+}
+.ingredients-bg{
+    background-image: url("img/ingredient-background.jpg");
+}
+.ingredients-text{
+    z-index: 1;
+    position: relative;
+    background: #000000;
+    opacity: 0.8;
+    margin: 80px 70px;
+    padding: 30px;
+    color: #ffffff;
+    font-size: 16px;
+}
+.ingredients-text:after, .testimonial-list:after{
+    background: #000000 none repeat scroll 0 0;
+    content: "";
+    height: 100%;
+    left: 0;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+}
+.ingredients-text p{
+    margin-bottom: 30px;
+}
+.section-title.white-sec-title{
+    color: #ffffff;
+    background: url("img/ingrdient-divider.png") no-repeat center bottom;
+}
+.food-menu-area{
+    background: url("img/symphony.png");
+}
+.single-food-menu-item{
+    margin-bottom: 30px;
+}
+.single-food-menu-item h2{
+    border-bottom: 1px solid;
+    color: #cc9900;
+    font-size: 18px;
+    margin-bottom: 10px;
+    padding-bottom: 6px;
+}
+.single-food-menu-item span{
+    float: right;
+}
+.single-food-menu-item.special {
+    border: 1px solid #d09900;
+    padding: 10px;
+    position: relative;
+}
+.single-food-menu-item.special:before {
+   content: "Special";
+    text-transform: uppercase;
+    background: #d09900;
+    position: absolute;
+    top: -20px;
+    right: 0;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 1px 5px;
+}
+.testimonial-area{
+    position: relative;
+}
+.testimonial-bg{
+    background: url("img/review-background.jpg");
+}
+.testimonial-list {
+    color: #ffffff;
+    font-size: 15px;
+    position: relative;
+    z-index: 1;
+    padding: 50px;
+}
+.testimonial-list p.testimonial-author{
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+#testimonial-carousel:before{
+    font-family: FontAwesome;
+    content: "\f10d";
+    position: absolute;
+    left: -30px;
+    top: -20px;
+    color: #9A9B9A;
+    font-size: 35px;
+}
+.contact-us-area{
+    background: url("img/symphony.png");
+}
+.contact-img img{
+    margin-left: 30px;
+    width: 245px;
+}
+.contact-form{
+    text-align: left;
+    margin-top: 40px;
+}
+.contact-form input[type=text]{
+    width: 100%;
+    border: 1px solid #E2D4AC;
+    padding: 7px;
+    margin-bottom: 10px;
+}
+.contact-form select{
+    width: 100%;
+    border: 1px solid #E2D4AC;
+    padding: 7px;
+    margin-bottom: 10px;
+}
+.contact-form label{
+    color: #d09900;
+}
+.contact-form button{
+    background: #C8A03C;
+    color: #ffffff;
+    border: none;
+    padding: 5px;
+    width: 150px;
+    margin: 0 auto;
+    display: block;
+}
+.footer-area{
+    background: #191919;
+    color: #ffffff;
+    padding: 50px 0;
+    font-size: 15px;
+}
+.footer-area .section-title{
+    font-size: 20px;
+    color: #ffffff;
+    background: url("img/footer-divider.png") no-repeat center bottom;
+    padding-bottom: 30px;
+}
+.footer-cards{
+    color: #ffffff;
+    margin-top: 20px;
+}
+.footer-cards i{
+    margin: 0 2px;
+}
+.footer-social-icon a{
+    font-size: 20px;
+    color: #ffffff;
+    display: inline-block;
+    padding: 0 3px;
+}
